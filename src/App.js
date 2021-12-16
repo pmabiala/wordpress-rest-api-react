@@ -45,7 +45,9 @@ function App() {
         <Typography variant="h4">
           From our blog
         </Typography>
+        <hr/>
         <Posts />
+        <hr/>
       </section>
       <footer style={{marginTop: '3em'}}>
         <Copyright />
