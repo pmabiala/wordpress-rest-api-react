@@ -9,9 +9,12 @@ import useFetch from './useFetch';
 export default function Posts() {
     //const posts = useFetch('/wp-json/wp/v2/posts');
     const posts = useFetch('https://mabialah.com/index.php/wp-json/wp/v2/posts');
+    console.clear();
+    console.log("posts => ", posts);//TRaces
   return (
     <Grid container spacing={2}>
       {posts && posts.map((post, index) => (
+        
       <Grid item xs={4} key={index}>
         <Card>
             <CardContent>
